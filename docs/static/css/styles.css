@@ -1,0 +1,183 @@
+:root {
+    --grey-1-8: rgba(249, 249, 250, 0.8);
+    --grey-2: #ededf0;
+    --grey-3: #d7d7db;
+    --grey-4: #b1b1b3;
+    --grey-5: #737373;
+    --grey-6: #4a4a4f;
+    --grey-7: #38383d;
+    --grey-8: #2a2a2e;
+}
+
+
+body {
+    background-color: var(--grey-6);
+    overflow-x: hidden;
+}
+
+#bttlgs {
+    transition: 0.25s ease;
+    border-radius: 20px;
+}
+
+#bttlgs:hover {
+    background-color: aqua;
+    transform: scale(1.1);
+}
+
+#bttlgs:active {
+    background-color: rgb(255, 38, 0);
+    transform: scale(0.8);
+}
+
+#dsclogo {
+    transition: 0.25s ease;
+    border-radius: 100%;
+    font-weight: bold;
+}
+
+#dsclogo:hover {
+    background-color: #737373;
+    transform: scale(1.2);
+}
+
+#dsclogo:active {
+    transform: scale(0.8);
+}
+
+a {
+    display: inline-block;
+    color: white;
+}
+
+#btng {
+    position: relative;
+    top: -25rem;
+}
+
+#ctnc {
+    color: white;
+    position: relative;
+    top: -25rem;
+    left: 15px;
+    width: 161px;
+}
+
+#title {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -200px;
+}
+
+#description {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -200px;
+}
+
+#expl {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -200px;
+}
+
+#bg {
+    background-color: var(--grey-7);
+    color: white;
+    width: 25rem;
+    height: 11rem;
+    position: relative;
+    top: -12rem;
+    left: 47rem;
+    border-radius: 10px;
+}
+
+#bg2 {
+    background-color: var(--grey-8);
+    color: white;
+    width: 25rem;
+    position: relative;
+    color: var(--grey-8);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#btn1 {
+    background-color: red;
+    width: 15px;
+    height: 16px;
+    border-radius: 100%;
+    color: red;
+    position: relative;
+    top: -8px;
+    left: 5Px;
+    cursor: pointer;
+}
+
+#btn2 {
+    background-color: yellow;
+    width: 15px;
+    height: 16px;
+    border-radius: 100%;
+    color: yellow;
+    position: relative;
+    left: 23px;
+    cursor: pointer;
+}
+
+#wb {
+    color: white;
+    width: 4rem;
+    font-size: 1.1rem;
+    position: relative;
+    left: 1rem;
+    top: -15px;
+    opacity: 0%;
+}
+
+#wbe {
+    color: white;
+    width: 20rem;
+    font-size: 0.9rem;
+    position: relative;
+    left: 1rem;
+    top: -35px;
+    opacity: 0%;
+}
+
+#wbbe {
+    color: white;
+    width: 20rem;
+    font-size: 0.9rem;
+    position: relative;
+    left: 1rem;
+    top: -35px;
+    opacity: 0%;
+}
+
+#rslt {
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -19rem;
+    left: 5rem;
+}
+
+#result {
+    width: 12rem;
+    position: relative;
+    left: -8.5rem;
+    top: 10rem;
+}
