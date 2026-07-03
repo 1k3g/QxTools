@@ -6,46 +6,46 @@ import winreg
 def projet():
     os.system("cls")
 
-    def install_qx():
-        folder = os.path.join(os.environ["USERPROFILE"], "qx_tool")
-        os.makedirs(folder, exist_ok=True)
+    # def install_qx():
+    #     folder = os.path.join(os.environ["USERPROFILE"], "qx_tool")
+    #     os.makedirs(folder, exist_ok=True)
 
-        script_path = os.path.join(folder, "qx.py")
+    #     script_path = os.path.join(folder, "qx.py")
 
-        with open(script_path, "w", encoding="utf-8") as f:
-            f.write(open(__file__, "r", encoding="utf-8").read())
+    #     with open(script_path, "w", encoding="utf-8") as f:
+    #         f.write(open(__file__, "r", encoding="utf-8").read())
 
-        bat_path = os.path.join(folder, "qx.bat")
+    #     bat_path = os.path.join(folder, "qx.bat")
 
-        with open(bat_path, "w", encoding="utf-8") as f:
-            f.write(f'@echo off\npython "{script_path}" %*')
+    #     with open(bat_path, "w", encoding="utf-8") as f:
+    #         f.write(f'@echo off\npython "{script_path}" %*')
 
-        key = winreg.OpenKey(
-            winreg.HKEY_CURRENT_USER,
-            "Environment",
-            0,
-            winreg.KEY_ALL_ACCESS
-        )
+    #     key = winreg.OpenKey(
+    #         winreg.HKEY_CURRENT_USER,
+    #         "Environment",
+    #         0,
+    #         winreg.KEY_ALL_ACCESS
+    #     )
 
-        try:
-            path_value, _ = winreg.QueryValueEx(key, "Path")
-        except:
-            path_value = ""
+    #     try:
+    #         path_value, _ = winreg.QueryValueEx(key, "Path")
+    #     except:
+    #         path_value = ""
 
-        if folder not in path_value:
-            winreg.SetValueEx(
-                key,
-                "Path",
-                0,
-                winreg.REG_EXPAND_SZ,
-                path_value + ";" + folder
-            )
+    #     if folder not in path_value:
+    #         winreg.SetValueEx(
+    #             key,
+    #             "Path",
+    #             0,
+    #             winreg.REG_EXPAND_SZ,
+    #             path_value + ";" + folder
+    #         )
 
 
     choix = questionary.select(
         "Choisis",
         [
-            "Install Qx CLI",
+            # "Install Qx CLI",
             "Web Structure",
             "Base Structure",
             "Ai Structure", 
