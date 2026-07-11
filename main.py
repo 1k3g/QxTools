@@ -6,11 +6,11 @@ import winreg
 def projet():
     os.system("cls")
 
-<<<<<<< HEAD
+
      # def install_qx():
-=======
+
     # def install_qx():
->>>>>>> 940ad1f2d8552989abb6f15e298935ecf3474f0a
+
     #     folder = os.path.join(os.environ["USERPROFILE"], "qx_tool")
     #     os.makedirs(folder, exist_ok=True)
 
